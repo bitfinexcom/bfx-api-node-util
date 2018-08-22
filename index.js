@@ -11,5 +11,5 @@ module.exports = {
   nonce,
   genAuthSig,
   isSnapshot,
-  isClass,
+  isClass
 }
