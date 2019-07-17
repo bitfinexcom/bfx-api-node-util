@@ -37,7 +37,7 @@
   "devDependencies": {
     "bfx-api-node-models": "bitfinexcom/bfx-api-node-models",
     "chai": "^3.4.1",
-    "mocha": "^3.4.2",
+    "mocha": "^6.1.4",
     "standard": "^10.0.2"
   },
   "dependencies": {
