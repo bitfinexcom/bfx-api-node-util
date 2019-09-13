@@ -1,0 +1,17 @@
+# 1.0.3
+- meta: add github issue/pr templates
+- meta: standardize travis config
+- meta: add example
+
+# 1.0.2
+- refactor: add 1000 multiplier to nonce
+- refactor: use nonce method in gen_auth_sig
+- manifest: bump deps
+- manifest: update contributors
+
+# 1.0.1
+- meta: populate README.md
+- manifest: add babel build for browser compatibility
+
+# 1.0.0
+- Initial version
