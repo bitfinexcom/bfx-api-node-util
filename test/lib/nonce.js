@@ -10,6 +10,6 @@ describe('nonce', () => {
   })
 
   it('is increasing', () => {
-    assert(nonce() < nonce())
+    assert(nonce() < nonce()) // eslint-disable-line
   })
 })
