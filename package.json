@@ -37,6 +37,7 @@
   },
   "homepage": "http://bitfinexcom.github.io/bfx-api-node-util/",
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "bfx-api-node-models": "^1.0.12",
     "chai": "^4.2.0",
     "mocha": "^6.2.0",
