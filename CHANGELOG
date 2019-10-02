@@ -1,3 +1,6 @@
+# 1.0.4
+- add function res_notification_info
+
 # 1.0.3
 - meta: add github issue/pr templates
 - meta: standardize travis config
