@@ -1,4 +1,8 @@
-# 1.0.4
+# 1.0.6
+- remove function res_notification_info
+- fix circular dep error
+
+# 1.0.5
 - add function res_notification_info
 
 # 1.0.3
