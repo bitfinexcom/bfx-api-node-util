@@ -40,13 +40,13 @@
     "babel-eslint": "^10.0.3",
     "chai": "^4.2.0",
     "mocha": "^6.2.0",
-    "standard": "^14.1.0"
+    "standard": "^14.1.0",
+    "bfx-api-node-models": "^1.1.0"
   },
   "dependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "bfx-api-node-models": "^1.1.0",
     "bignumber.js": "^6.0.0",
     "copy": "^0.3.2"
   }
