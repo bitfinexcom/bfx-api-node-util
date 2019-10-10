@@ -27,7 +27,7 @@ const n = nonce()
 
 ### Docs
 
-Refer to `docs/func_docs.md` for JSDoc-generated API documentation
+[Refer to `docs/func_docs.md`](/docs/func_docs.md) for JSDoc-generated API documentation
 
 ### Example: Padding Candles
 
