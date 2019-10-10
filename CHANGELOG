@@ -1,3 +1,6 @@
+# 1.0.7
+- docs: create/update
+
 # 1.0.6
 - remove function res_notification_info
 - fix circular dep error

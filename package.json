@@ -1,6 +1,6 @@
 {
   "name": "bfx-api-node-util",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Utilities for the Bitfinex node API",
   "engines": {
     "node": ">=7"
@@ -10,7 +10,9 @@
     "lint": "standard",
     "test": "npm run lint && npm run unit",
     "unit": "NODE_ENV=test mocha -b --recursive",
-    "build": "babel -q ./index.js -d ./dist && babel -q ./lib -d ./dist/lib && copy package.json dist"
+    "build": "babel -q ./index.js -d ./dist && babel -q ./lib -d ./dist/lib && copy package.json dist",
+    "docs": "npm run func_docs",
+    "func_docs": "node_modules/jsdoc-to-markdown/bin/cli.js lib/*.js > docs/func_docs.md"
   },
   "repository": {
     "type": "git",
@@ -39,6 +41,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "chai": "^4.2.0",
+    "jsdoc-to-markdown": "^5.0.1",
     "mocha": "^6.2.0",
     "standard": "^14.1.0",
     "bfx-api-node-models": "^1.1.0"
