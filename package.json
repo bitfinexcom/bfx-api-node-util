@@ -1,6 +1,6 @@
 {
   "name": "bfx-api-node-util",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Utilities for the Bitfinex node API",
   "engines": {
     "node": ">=7"
@@ -50,7 +50,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "bignumber.js": "^6.0.0",
+    "bignumber.js": "^9.0.0",
     "copy": "^0.3.2"
   }
 }
