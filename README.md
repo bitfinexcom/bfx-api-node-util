@@ -27,7 +27,8 @@ const n = nonce()
 
 ### Docs
 
-[Refer to `docs/func_docs.md`](/docs/func_docs.md) for JSDoc-generated API documentation
+API documentation can be found in [`docs/reference.md`](docs/reference.md), and
+examples in the [`examples`](examples) folder.
 
 ### Example: Padding Candles
 
