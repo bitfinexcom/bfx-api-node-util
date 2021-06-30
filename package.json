@@ -10,7 +10,7 @@
     "lint": "standard",
     "test": "npm run lint && npm run unit",
     "unit": "NODE_ENV=test mocha -b --recursive",
-    "build": "babel --quiet ./index.js -d ./dist && babel --quiet ./lib -d ./dist/lib && copy package.json dist",
+    "build": "babel ./index.js -d ./dist && babel ./lib -d ./dist/lib",
     "docs": "npm run func_docs",
     "func_docs": "node_modules/jsdoc-to-markdown/bin/cli.js lib/*.js > docs/func_docs.md"
   },
@@ -51,7 +51,6 @@
     "standard": "^14.1.0"
   },
   "dependencies": {
-    "bignumber.js": "^9.0.0",
-    "copy": "^0.3.2"
+    "bignumber.js": "^9.0.0"
   }
 }
