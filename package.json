@@ -10,7 +10,7 @@
     "lint": "standard",
     "test": "npm run lint && npm run unit",
     "unit": "NODE_ENV=test mocha -b --recursive",
-    "build": "babel -q ./index.js -d ./dist && babel -q ./lib -d ./dist/lib && copy package.json dist",
+    "build": "babel --quiet ./index.js -d ./dist && babel --quiet ./lib -d ./dist/lib && copy package.json dist",
     "docs": "npm run func_docs",
     "func_docs": "node_modules/jsdoc-to-markdown/bin/cli.js lib/*.js > docs/func_docs.md"
   },
@@ -39,17 +39,18 @@
   },
   "homepage": "http://bitfinexcom.github.io/bfx-api-node-util/",
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/plugin-transform-regenerator": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "bfx-api-node-models": "^1.1.0",
     "chai": "^4.2.0",
     "jsdoc-to-markdown": "^5.0.1",
     "mocha": "^6.2.0",
-    "standard": "^14.1.0",
-    "bfx-api-node-models": "^1.1.0"
+    "standard": "^14.1.0"
   },
   "dependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-regenerator": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "bignumber.js": "^9.0.0",
     "copy": "^0.3.2"
   }
