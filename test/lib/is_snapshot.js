@@ -1,19 +1,18 @@
-/* eslint-env mocha */
 'use strict'
 
-const assert = require('assert')
+const test = require('brittle')
 const isSnapshot = require('../../lib/is_snapshot')
 
-describe('isSnapshot - detects snapshots by data structure', () => {
-  it('returns false for heartbeats', () => {
-    assert.strictEqual(isSnapshot(['hb']), false)
+test('isSnapshot - detects snapshots by data structure', (t) => {
+  t.test('returns false for heartbeats', (t) => {
+    t.is(isSnapshot(['hb']), false)
   })
 
-  it('returns false simple lists (data updates)', () => {
-    assert.strictEqual(isSnapshot([1337]), false)
+  t.test('returns false simple lists (data updates)', (t) => {
+    t.is(isSnapshot([1337]), false)
   })
 
-  it('returns true for nested lists (snapshots)', () => {
-    assert.strictEqual(isSnapshot([['a'], ['b']]), true)
+  t.test('returns true for nested lists (snapshots)', (t) => {
+    t.is(isSnapshot([['a'], ['b']]), true)
   })
 })

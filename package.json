@@ -1,17 +1,16 @@
 {
   "name": "bfx-api-node-util",
-  "version": "1.0.11",
+  "version": "2.0.0",
   "description": "Utilities for the Bitfinex node API",
   "engines": {
-    "node": ">=7"
+    "node": ">=22.0.0"
   },
   "main": "./index.js",
   "scripts": {
-    "lint": "standard",
+    "lint": "bfx-lint-js .",
+    "lint:fix": "bfx-lint-js . --fix",
     "test": "npm run lint && npm run unit",
-    "unit": "NODE_ENV=test mocha -b --recursive",
-    "docs": "npm run func_docs",
-    "func_docs": "node_modules/jsdoc-to-markdown/bin/cli.js lib/*.js > docs/func_docs.md"
+    "unit": "NODE_ENV=test brittle-node --bail 'test/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -38,13 +37,11 @@
   },
   "homepage": "http://bitfinexcom.github.io/bfx-api-node-util/",
   "devDependencies": {
-    "bfx-api-node-models": "^1.3.3",
-    "chai": "^4.2.0",
-    "jsdoc-to-markdown": "^5.0.1",
-    "mocha": "^6.2.0",
-    "standard": "^16.0.3"
+    "@bitfinex/lint-js": "^1.1.0",
+    "bfx-api-node-models": "^2.1.3",
+    "brittle": "^4.5.0"
   },
   "dependencies": {
-    "bignumber.js": "9.0.0"
+    "bignumber.js": "9.3.1"
   }
 }
